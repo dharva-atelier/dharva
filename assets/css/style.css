@@ -1,0 +1,587 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+
+body {
+    background-color: #F6F5F1;
+    padding: 0;
+    margin: 0;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-height: 50%;
+    position: fixed;
+    left: 0;
+    z-index: 999; /* Pastikan nilai ini lebih tinggi dari elemen lain */
+}
+
+.nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #F6F5F1;
+    box-shadow: 0 1px 0px hwb(0 0% 100%);
+    padding: 0.5rem 2rem;
+}
+
+.logo {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.nav__logo {
+    color: #3C3D37;
+    text-decoration: none;
+    border: none;
+    white-space: nowrap;
+}
+
+.nav__menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav__menu-left {
+    flex: 1;
+    gap: 70px;
+    justify-content: flex-start;
+}
+
+.nav__menu-right {
+    flex: 1;
+    gap: 70px;
+    justify-content: flex-end;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for "Davina" */
+.font-imperial-script {
+    font-family: 'Imperial Script', cursive;
+    font-size: 70px;
+    margin-right: -5px;
+    display: inline-block;
+}
+
+.font-baskervville-sc {
+    font-family: 'Baskervville SC', serif;
+    font-size: 45px;
+}
+
+/* Styling for navigation menu */
+.nav__link {
+    color: #3C3D37;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: #298f9b;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+/* General styles */
+main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.Home {
+  display: flex;
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+  text-align: center; /* Memusatkan teks */
+  flex-wrap: wrap; /* Agar konten responsif */
+  height: 100vh; /* Tinggi penuh untuk halaman */
+}
+
+/* Image styles */
+.img {
+  max-width: 900px;
+  padding-top: 180px;
+  height: auto;
+  justify-content: flex-end;
+}
+
+.img img {
+  margin-right: 70px;
+  width: 428px;
+  height: 100%;
+  justify-content: flex-end;
+  
+}
+
+/* Text and button styles */
+.content {
+  padding-top: 100px;
+  margin-right: 200px;
+  align-items: center;
+  text-align: -webkit-auto;
+}
+
+/* Styling for "Davina" */
+.title-font-imperial-script {
+  color: #000000;
+  font-family: 'Imperial Script', serif;
+  font-size: 60px;
+}
+
+.title-font-baskervville-sc {
+  color: #000000;
+  font-family: 'Baskervville SC', serif;
+  font-size: 40px;
+}
+
+.subtitle {
+  font-family: 'Baskervville SC', serif;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #000000;
+  font-family: 'Baskervville SC', serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+}
+
+.button button {
+  background-color: #3C3D37;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.9s;
+}
+
+.button button:hover {
+  background-color: #d4d4d4;
+  color: #3C3D37;
+}
+
+/* About Me Section */
+.about {
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1040px;
+  width: 100%;
+  flex-wrap: wrap; /* Responsif */
+  height: 100%; /* Menyesuaikan tinggi container */
+  max-height: 1000px;
+
+}
+
+.about-teks {
+  background-color: #3C3D37; /* Warna background teks */
+  height: 710px;
+  color: #fff;
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.about-title {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.title-about-font-baskervville-sc {
+  color: #ffffff;
+  font-family: 'Baskervville SC', serif;
+  font-size: 2.5rem;
+}
+
+.title-font-bullet {
+  color: #ffffff;
+  font-family: 'Ballet', serif;
+  font-size: 2.5rem;
+}
+
+.about-description {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-image {
+  background-color: #3C3D37;
+}
+
+.about-image img {
+  float: right;
+  max-width: 93.5%; /* Sesuaikan proporsi gambar */
+}
+
+/* portfolio */
+.portfolio {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+/* Section Titles */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Cursive", serif;
+  margin-bottom: 1rem;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+/* Swiper Container */
+.swiper-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 95%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  padding-left: 70px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Styling */
+.portfolio__card {
+  width: 250px;
+  height: 240px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio__card:hover {
+  transform: scale(1.05);
+}
+
+.portfolio__card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.portfolio__card button {
+  background: #fff;
+  border: 1px solid #2c2c2c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.portfolio__card button:hover {
+  background: #2c2c2c;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+
+/* Divider */
+.divider {
+  border: 0;
+  height: 1px;
+  margin: 2rem 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio__container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.portfolio__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background: #1c1c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio__img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.portfolio__data {
+  text-align: left;
+}
+
+.portfolio__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio__description {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+
+/* Card Wrapper */
+.portfolio__card {
+  background: #454545;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio__card:hover {
+  transform: scale(1.05);
+}
+
+.portfolio__img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+/* Detail Card */
+.portfolio__detail {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh; /* Full tinggi */
+  width: 400px;
+  max-width: 90%;
+  background: #1c1c1c;
+  padding: 1.5rem;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.portfolio__detail.hidden {
+  display: none;
+}
+
+.portfolio__detail-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #00bcd4;
+}
+
+/* Background Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Warna abu-abu */
+  backdrop-filter: blur(5px); /* Efek blur */
+  z-index: 999;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  border-radius: 15px;
+  background-color: #3C3D37;
+  font-family: Arial, sans-serif;
+}
+
+.list-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Row of Icons */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-skills {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 12px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 1px 1px rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+}
+
+.card-skills:hover {
+  transform: scale(1.1);
+}
+
+.card-skills img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Center Text */
+.center {
+  width: 450px;
+  height: 200px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 1px 1px 1px rgb(255, 255, 255);
+}
+
+.title-font-Baskervville-script-tools {
+  color: #ffffff;
+  font-family: 'Baskervville SC', serif;
+  font-size: 40px;
+}
+
+.title-font-Ballet-script-tools {
+  color: #ffffff;
+  font-family: 'Ballet', serif;
+  font-size: 5rem;
+}

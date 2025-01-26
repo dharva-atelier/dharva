@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+    <title>Dharv</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <ul class="nav__menu nav__menu-left">
+                <li class="nav__item">
+                    <a href="#Home" class="nav__link active-link">HOME</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#About" class="nav__link">ABOUT</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">PORTFOLIO</a>
+                </li>
+            </ul>
+        
+            <div class="logo">
+                <a href="#Home" class="nav__logo">
+                    <span class="font-imperial-script">D</span>
+                    <span class="font-baskervville-sc">avina</span>
+                </a>
+            </div>
+                
+            <ul class="nav__menu nav__menu-right">
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">SKILLS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#testimonials" class="nav__link">TESTIMONIALS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">CONTACT</a>
+                </li>
+                <li class="nav__item">
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section class="Home" id="Home">
+            <div class="img">
+                <a href="#Home">
+                <img src="./assets/img/home.png" alt="davina_profile">
+                </a>
+            </div>
+
+            <div class="content">
+                <h1 class="title">
+                    <span class="title-font-imperial-script">D</span>
+                    <span class="title-font-baskervville-sc">avina</span>
+                    <span class="title-font-imperial-script">H</span>
+                    <span class="title-font-baskervville-sc">arva</span>
+                    <span class="title-font-imperial-script">K</span>
+                    <span class="title-font-baskervville-sc">encana</span>
+                </h1>
+                <h3 class="subtitle">Finance | UI/UX Designer | Services Representative</h3>
+                <p class="description">
+                    Combining expertise in finance, business services, and design to <br> deliver solutions.
+                </p>
+                <div class="button">
+                    <button>Discover My Resume</button>
+                    <button>Contact Me</button>
+                </div>
+            </div>
+        </section>
+    
+            <!-- About Me Section -->
+            <section class="about" id="About">
+                <div class="about-container">
+                    <div class="about-teks">
+                        <h1 class="about-title">
+                            <span class="title-about-font-baskervville-sc">ABOUT</span>
+                            <span class="title-font-bullet">Me</span>
+                        </h1>
+                        <p class="about-description">
+                            I am a dedicated management student combining expertise in financial analysis, UI/UX design, 
+                            and data-driven strategies to drive business success. During a 6-month finance internship, 
+                            I optimized processes, enhanced reporting accuracy, and improved team productivity. 
+                            By continuously expanding my skills in management, analysis, and design, I bridge business principles 
+                            with technology to deliver impactful solutions and foster innovation.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <a href="#About">
+                    <img src="./assets/img/about.jpg" alt="About Me Photo">
+                    </a>
+                </div>
+                
+            </section>
+                        
+            
+            <section class="portfolio" id="portfolio">
+                <h1 class="title">Portfolio</h1>
+                <p class="subtitle">Explore my projects across UI/UX, Finance, and Business Services</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Example Project Cards -->
+                        <div class="swiper-slide">
+                            <div class="portfolio__card">
+                                <img src="https://via.placeholder.com/200x150" alt="Project 1">
+                                <button>More</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__card">
+                                <img src="https://via.placeholder.com/200x150" alt="Project 2">
+                                <button>More</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__card">
+                                <img src="https://via.placeholder.com/200x150" alt="Project 3">
+                                <button>More</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__card">
+                                <img src="https://via.placeholder.com/200x150" alt="Project 4">
+                                <button>More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+        
+            <hr class="divider">
+        
+            <!-- Certificates Section -->
+            <section class="portfolio">
+                <h1 class="title">Certificates</h1>
+                <p class="subtitle">Recognitions earned throughout my career</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Sertifikat 1 -->
+                        <div class="swiper-slide">
+                            <div class="portfolio__card">
+                                <img src="./assets/img/sertifikat/sertifikat_1.png" alt="Certificate 1" class="portfolio__img">
+                                <button onclick="showDetails(1)">More</button>
+                            </div>
+                        </div>
+                    
+                        <!-- Sertifikat 2 -->
+                        <div class="swiper-slide">
+                            <div class="portfolio__card">
+                                <img src="./assets/img/sertifikat/sertifikat_2.png" alt="Certificate 2" class="portfolio__img">
+                                <button onclick="showDetails(2)">More</button>
+                            </div>
+                        </div>
+                        <!-- Sertifikat 3 -->
+                        <div class="swiper-slide">
+                            <div class="portfolio__card">
+                                <img src="./assets/img/sertifikat/sertifikat_3.png" alt="Certificate 3" class="portfolio__img">
+                                <button onclick="showDetails(3)">More</button>
+                            </div>
+                        </div>
+                        <!-- Sertifikat 4 -->
+                        <div class="swiper-slide">
+                            <div class="portfolio__card">
+                                <img src="./assets/img/sertifikat/sertifikat4.png" alt="Certificate 4" class="portfolio__img">
+                                <button onclick="showDetails(4)">More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="overlay" class="overlay"></div>
+
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div id="detailCard" class="portfolio__detail hidden">
+                        <button class="close-btn" onclick="hideDetails()">✖</button>
+                        <img id="detailImg" src="" alt="Certificate Detail" class="portfolio__detail-img">
+                        <div class="portfolio__data">
+                            <h3 id="detailTitle" class="portfolio__title"></h3>
+                            <p id="detailDescription" class="portfolio__description"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- skills -->
+            <section class="skills" id="skills">
+                <div class="list-skills">
+                    <!-- Row 1 -->
+                    <div class="row">
+                        <div class="card-skills">
+                            <img src="figma.png" alt="Figma">
+                        </div>
+                        <div class="card-skills">
+                            <img src="excel.png" alt="Excel">
+                        </div>
+                        <div class="card-skills">
+                            <img src="google.png" alt="Google">
+                        </div>
+                        <div class="card-skills">
+                            <img src="trello.png" alt="Trello">
+                        </div>
+                        <div class="card-skills">
+                            <img src="notion.png" alt="Notion">
+                        </div>
+                    </div>
+            
+                    <!-- Center Text -->
+                    <div class="center">
+                        <h1 class="title">
+                            <span class="title-font-Ballet-script-tools">T</span>
+                            <span class="title-font-Baskervville-script-tools">OOLS</span>
+                        </h1>
+                    </div>
+            
+                    <!-- Row 2 -->
+                    <div class="row">
+                        <div class="card-skills">
+                            <img src="cross.png" alt="Cross">
+                        </div>
+                        <div class="card-skills">
+                            <img src="calendar.png" alt="Calendar">
+                        </div>
+                        <div class="card-skills">
+                            <img src="powerpoint.png" alt="PowerPoint">
+                        </div>
+                        <div class="card-skills">
+                            <img src="word.png" alt="Word">
+                        </div>
+                        <div class="card-skills">
+                            <img src="yellow.png" alt="Yellow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/style.js"></script>
+
+</body>
+</html>
