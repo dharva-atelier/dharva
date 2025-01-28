@@ -96,8 +96,10 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// Mencegah klik kanan (opsional, untuk keamanan tambahan)
-document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    alert("Klik kanan tidak diizinkan.");
-});
+// // Mencegah klik kanan (opsional, untuk keamanan tambahan)
+// document.addEventListener("contextmenu", (e) => {
+//     e.preventDefault();
+//     alert("Klik kanan tidak diizinkan.");
+// });
+
+
