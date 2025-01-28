@@ -585,10 +585,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 350px;
+  padding: 320px;
   padding-bottom: 200px;
   background-size: 10px;
-  background-image: url('/assets/img/tensi.png'); /* Ganti dengan path background Anda */
+  background-image: url('../img/tensi.png'); /* Ganti dengan path background Anda */
   background-size: 90%; /* Ubah ukuran gambar menjadi lebih kecil */
   background-repeat: no-repeat; /* Hindari pengulangan gambar */
   background-position: center;
