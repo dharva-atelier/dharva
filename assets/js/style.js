@@ -112,14 +112,19 @@ function checkDevice() {
         <div style="text-align: center; margin-top: 50px;">
         <h1>Website ini hanya dapat diakses melalui perangkat laptop.</h1>
         <p>Mohon maaf atas ketidaknyamanannya, silakan akses kembali menggunakan laptop.</p>
+        <button onclick="closeWindow()">Exit</button>
         </div>
         `;
         alert("Not Found!!!");
     }
 }
 
+function closeWindow() {
+    window.location.href = "https://www.google.com/";
+}
 
-// Periksa perangkat sebelum halaman dirender
-checkDevice();
+
+// Periksa perangkat saat halaman dimuat
+window.onload = checkDevice;
 // Periksa perangkat saat ukuran layar berubah
 window.onresize = checkDevice;
