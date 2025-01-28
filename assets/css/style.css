@@ -766,3 +766,17 @@ body {
   font-family: 'Georgia', serif;
   letter-spacing: 0.5px;
 }
+
+
+
+@media (max-width: 1024px) {
+  body {
+      display: none;
+  }
+  .mobile-message {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      margin-top: 50px;
+  }
+}

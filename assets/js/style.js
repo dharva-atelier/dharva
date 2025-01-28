@@ -96,10 +96,30 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// // Mencegah klik kanan (opsional, untuk keamanan tambahan)
-// document.addEventListener("contextmenu", (e) => {
-//     e.preventDefault();
-//     alert("Klik kanan tidak diizinkan.");
-// });
+// Mencegah klik kanan (opsional, untuk keamanan tambahan)
+document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    alert("Klik kanan tidak diizinkan.");
+});
 
 
+function checkDevice() {
+    const width = window.innerWidth;
+
+    // Asumsikan laptop memiliki lebar layar lebih dari 1024px
+    if (width <= 1024) {
+        document.documentElement.innerHTML = `
+        <div style="text-align: center; margin-top: 50px;">
+        <h1>Website ini hanya dapat diakses melalui perangkat laptop.</h1>
+        <p>Mohon maaf atas ketidaknyamanannya, silakan akses kembali menggunakan laptop.</p>
+        </div>
+        `;
+        alert("Not Found!!!");
+    }
+}
+
+
+// Periksa perangkat sebelum halaman dirender
+checkDevice();
+// Periksa perangkat saat ukuran layar berubah
+window.onresize = checkDevice;
