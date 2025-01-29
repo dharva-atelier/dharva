@@ -66,7 +66,7 @@
 
             <div class="content">
                 <h1 class="title">
-                    <span class="title-font-imperial-script">D</span>
+                    <span class="title-font-imperial-script" style="margin-right: -7px;">D</span>
                     <span class="title-font-baskervville-sc">avina</span>
                     <span class="title-font-imperial-script">H</span>
                     <span class="title-font-baskervville-sc">arva</span>
@@ -78,8 +78,8 @@
                     Combining expertise in finance, business services, and design to <br> deliver solutions.
                 </p>
                 <div class="button">
-                    <button>Discover My Resume</button>
-                    <button>Contact Me</button>
+                    <button><a href="./assets/pdf/davina.pdf">Discover My Resume</a></button>
+                    <button><a href="#kontak">Contact Me</a></button>
                 </div>
             </div>
         </section>
@@ -111,33 +111,38 @@
                         
             
             <section class="portfolio" id="portfolio">
-                <h1 class="title">Portfolio</h1>
-                <p class="subtitle">Explore my projects across UI/UX, Finance, and Business Services</p>
+            <div>
+                <span class="title-font-ballet-portfolio">P</span>
+                <span class="title-font-baskervville-sc-portfolio">ortfolio</span>
+            </div>  
+              <p class="subtitle">Explore my projects across UI/UX, Finance, and Business Services</p>
+              <hr class="subtitle-line">
+
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- Example Project Cards -->
                         <div class="swiper-slide">
                             <div class="portfolio__card">
-                                <img src="https://via.placeholder.com/200x150" alt="Project 1">
-                                <button>More</button>
+                                <img src="./assets/img/project/Student Savings/project student savings.jpg" alt="Project 1">
+                                <button onclick="showDetailsPrjct(1)">More</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="portfolio__card">
-                                <img src="https://via.placeholder.com/200x150" alt="Project 2">
-                                <button>More</button>
+                                <img src="./assets/img/project/Kartini/princessofjava.jpg" alt="Project 2">
+                                <button onclick="showDetailsPrjct(2)">More</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="portfolio__card">
                                 <img src="https://via.placeholder.com/200x150" alt="Project 3">
-                                <button>More</button>
+                                <button onclick="showDetailsPrjct(3)">More</button>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="portfolio__card">
                                 <img src="https://via.placeholder.com/200x150" alt="Project 4">
-                                <button>More</button>
+                                <button onclick="showDetailsPrjct(4)">More</button>
                             </div>
                         </div>
                     </div>
@@ -151,8 +156,12 @@
         
             <!-- Certificates Section -->
             <section class="portfolio">
-                <h1 class="title">Certificates</h1>
+                <div>
+                    <span class="title-font-ballet-portfolio">C</span>
+                    <span class="title-font-baskervville-sc-portfolio">ertificates</span>
+                </div>  
                 <p class="subtitle">Recognitions earned throughout my career</p>
+                <hr class="subtitle-line">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- Sertifikat 1 -->
@@ -210,19 +219,19 @@
                     <!-- Row 1 -->
                     <div class="row">
                         <div class="card-skills">
-                            <img src="figma.png" alt="Figma">
+                            <img src="./assets/img/skills/Clip path group.png" alt="Figma">
                         </div>
                         <div class="card-skills">
-                            <img src="excel.png" alt="Excel">
+                            <img src="./assets/img/skills/vscode-icons_file-type-excel.png" alt="Excel">
                         </div>
                         <div class="card-skills">
-                            <img src="google.png" alt="Google">
+                            <img src="./assets/img/skills/logos_looker-icon.png" alt="Google">
                         </div>
                         <div class="card-skills">
-                            <img src="trello.png" alt="Trello">
+                            <img src="./assets/img/skills/devicon_trello.png" alt="Trello">
                         </div>
                         <div class="card-skills">
-                            <img src="notion.png" alt="Notion">
+                            <img src="./assets/img/skills/logos_notion-icon.png" alt="Notion">
                         </div>
                     </div>
             
@@ -237,55 +246,58 @@
                     <!-- Row 2 -->
                     <div class="row">
                         <div class="card-skills">
-                            <img src="cross.png" alt="Cross">
+                            <img src="./assets/img/skills/tabler_file-spreadsheet.png" alt="Cross">
                         </div>
                         <div class="card-skills">
-                            <img src="calendar.png" alt="Calendar">
+                            <img src="./assets/img/skills/logos_google-calendar.png" alt="Calendar">
                         </div>
                         <div class="card-skills">
-                            <img src="powerpoint.png" alt="PowerPoint">
+                            <img src="./assets/img/skills/vscode-icons_file-type-powerpoint.png" alt="PowerPoint">
                         </div>
                         <div class="card-skills">
-                            <img src="word.png" alt="Word">
+                            <img src="./assets/img/skills/vscode-icons_file-type-word.png" alt="Word">
                         </div>
                         <div class="card-skills">
-                            <img src="yellow.png" alt="Yellow">
+                            <img src="./assets/img/skills/cropped-logo 1.png" alt="Yellow">
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="tensi" id="testimonials">
-                <div class="testimonial">
-                  <div class="card">
-                    <div class="profile-img">
-                      <img src="/assets/img/profile1.jpg" alt="Pradipta Wardani">
+                <div class="testimonial-container">
+                  <div class="testimonial">
+                    <div class="card">
+                      <div class="profile-img">
+                        <img src="./assets/img/testi/image 4.png" alt="Pradipta Wardani">
+                      </div>
+                      <h2 class="title-testi">Pradifta Wardani | Head of finance pt optima winwin solution</h2>
+                      <p class="description-testi">
+                        "Bekerja dengan [Nama Kamu] adalah pengalaman luar biasa. Desain antarmukanya tidak hanya estetis, tetapi juga sangat intuitif bagi pengguna. Proyek kami selesai tepat waktu dengan hasil yang melampaui ekspektasi!"
+                      </p>
                     </div>
-                    <h2>Pradipta Wardani</h2>
-                    <h3>Head of Finance<br>PT Optima Winwin Solution</h3>
-                    <p>
-                      "Bekerja dengan [Nama Kamu] adalah pengalaman luar biasa. Desain antarmukanya tidak hanya estetis, tetapi juga sangat intuitif bagi pengguna. Proyek kami selesai tepat waktu dengan hasil yang melampaui ekspektasi!"
-                    </p>
-                  </div>
-                  <div class="card">
-                    <div class="profile-img">
-                      <img src="/assets/img/profile2.jpg" alt="Pradipta Wardani">
+                    <div class="card">
+                      <div class="profile-img">
+                        <img src="./assets/img/testi/image 4.png" alt="Pradipta Wardani">
+                      </div>
+                      <h2 class="title-testi">Pradifta Wardani | Head of finance pt optima winwin solution</h2>
+                      <p class="description-testi">
+                        "Bekerja dengan [Nama Kamu] adalah pengalaman luar biasa. Desain antarmukanya tidak hanya estetis, tetapi juga sangat intuitif bagi pengguna. Proyek kami selesai tepat waktu dengan hasil yang melampaui ekspektasi!"
+                      </p>
                     </div>
-                    <h2>Pradipta Wardani</h2>
-                    <h3>Head of Finance<br>PT Optima Winwin Solution</h3>
-                    <p>
-                      "Bekerja dengan [Nama Kamu] adalah pengalaman luar biasa. Desain antarmukanya tidak hanya estetis, tetapi juga sangat intuitif bagi pengguna. Proyek kami selesai tepat waktu dengan hasil yang melampaui ekspektasi!"
-                    </p>
                   </div>
                 </div>
               </section>
+              
 
               <section class="kontak" id="kontak">
                 <div class="left">
-                    <h1>
-                        Your Next Step <br />
-                        <span>Starts Here</span>
-                    </h1>
+                    <div>
+                        <span class="title-font-ballet-kontak">Y</span>
+                        <span class="title-font-baskervville-sc-kontak">our Next Step Starts</span>
+                        <span class="title-font-ballet-kontak">H</span>
+                        <span class="title-font-baskervville-sc-kontak">ere</span>
+                    </div>  
                     <p>
                         Feel free to reach out for inquiries, collaboration, or projects.
                     </p>
@@ -296,22 +308,41 @@
                     </div>
                 </div>
                 <div class="right">
-                    <form>
-                        <input type="text" name="name" placeholder="Your name" required />
-                        <input type="email" name="email" placeholder="Your email" required />
-                        <textarea name="message" placeholder="Message" required></textarea>
+                    <form id="contactForm">
+                        <input type="text" id="name" name="name" placeholder="Your name" required />
+                        <input type="email" id="email" name="email" placeholder="Your email" required />
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
             </section>
 
-            <section class="social-section">
-                <hr>
-                <a href="#" title="Mail">M</a>
-                <a href="#" title="Instagram">I</a>
-                <a href="#" title="LinkedIn">in</a>
-                <hr>
+            <section class="social-section" style="display: flex; align-items: center;">
+                <hr style="flex-grow: 1; border: 1px solid white;">
+                
+                <a href="mailto:dharva.wiramihardja@gmail.com" title="Mail">
+                    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 14L24 24L39 14M9 36H39V18L24 28L9 18V36Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            
+                <a href="#" title="Instagram">
+                    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="6" width="36" height="36" rx="8" stroke="white" stroke-width="4"/>
+                        <circle cx="24" cy="24" r="7" stroke="white" stroke-width="4"/>
+                        <circle cx="34" cy="14" r="2" fill="white"/>
+                    </svg>
+                </a>
+            
+                <a href="https://www.linkedin.com/in/davinaharva/" title="LinkedIn">
+                    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 19H18V36H12V19ZM15 14C13.34 14 12 12.66 12 11C12 9.34 13.34 8 15 8C16.66 8 18 9.34 18 11C18 12.66 16.66 14 15 14ZM20 19H26V22H26.11C27.02 20.42 28.9 19 31 19C35.42 19 36 21.8 36 25.42V36H30V27C30 24.94 29.06 24 27.5 24C25.94 24 25 24.94 25 27V36H20V19Z" fill="white"/>
+                    </svg>
+                </a>
+            
+                <hr style="flex-grow: 1; border: 1px solid white;">
             </section>
+            
 
             
         </main>

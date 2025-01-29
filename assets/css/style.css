@@ -88,13 +88,42 @@ body {
 }
 
 .nav__link:hover {
-    color: #298f9b;
+    color: #747474;
 }
 
 .change-theme {
     font-size: 1.25rem;
     cursor: pointer;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Make sure the logo stays in center */
+  .logo {
+    margin: 0;
+    flex: 1;
+    justify-content: center;
+  }
+
+  /* Hide the menu initially and display toggle */
+  .nav__menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #F6F5F1;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 999;
+  }
+
+}
+
 
 
 .Home {
@@ -133,6 +162,7 @@ body {
 /* Styling for "Davina" */
 .title-font-imperial-script {
   color: #000000;
+  margin-right: 1px;
   font-family: 'Imperial Script', serif;
   font-size: 60px;
 }
@@ -159,14 +189,16 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.button {
+.button a {
+  text-decoration: none;
+  color: #fff;
+
   display: flex;
   gap: 1rem;
 }
 
 .button button {
   background-color: #3C3D37;
-  color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -179,6 +211,54 @@ body {
   background-color: #d4d4d4;
   color: #3C3D37;
 }
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .Home {
+    padding-top: 120px;
+    padding-bottom: 200px;
+    text-align: center;
+    justify-content: flex-start; /* Menjaga konten berada di atas */
+  }
+
+  .img {
+    max-width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+    padding-top: 0; /* Menghilangkan padding atas pada mobile */
+    text-align: center; /* Memusatkan gambar pada mobile */
+  }
+
+  .img img {
+    width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Menjaga aspek rasio gambar */
+    margin-right: 0; /* Menghapus margin kanan gambar */
+  }
+
+  .content {
+    margin-right: 0; /* Menghilangkan margin kanan pada konten */
+    padding-top: 20px; /* Memberikan sedikit padding atas */
+  }
+
+  .title-font-imperial-script,
+  .title-font-baskervville-sc {
+    font-size: 40px; /* Menyesuaikan ukuran font agar pas di mobile */
+  }
+
+  .subtitle {
+    font-size: 1.2rem; /* Menyesuaikan ukuran subtitle di mobile */
+  }
+
+  .description {
+    font-size: 1rem; /* Menyesuaikan ukuran deskripsi di mobile */
+    line-height: 1.4; /* Menyesuaikan jarak antar baris */
+  }
+
+  .button button {
+    padding: 0.5rem 1rem; /* Menyesuaikan padding tombol di mobile */
+    font-size: 0.9rem; /* Menyesuaikan ukuran font tombol */
+  }
+}
+
+
 
 /* About Me Section */
 .about {
@@ -251,23 +331,34 @@ body {
   padding-bottom: 100px;
 }
 
-/* Section Titles */
-.title {
-  font-size: 2.5rem;
-  text-align: center;
-  font-family: "Cursive", serif;
-  margin-bottom: 1rem;
-  color: #2c2c2c;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+/* Styling for "Davina" */
+.title-font-ballet-portfolio {
+  color: #000000;
+  margin-right: 1px;
+  font-family: 'Ballet', serif;
+  font-size: 60px;
+}
+
+.title-font-baskervville-sc-portfolio {
+  color: #000000;
+  font-family: 'Baskervville SC', serif;
+  font-size: 70px;
 }
 
 .subtitle {
+  margin-top: -10px;
   font-size: 1.2rem;
-  font-style: italic;
-  margin-bottom: 2rem;
   color: #666;
 }
+
+
+.subtitle-line {
+  border: 0;
+  border-top: 2px solid #333; /* Atur ketebalan dan warna garis */
+  width: 700px; /* Atur panjang garis */
+  margin: 20px auto; /* Menjaga jarak dan meratakan garis */
+}
+
 
 /* Swiper Container */
 .swiper-container {
@@ -279,10 +370,9 @@ body {
 
 .swiper-wrapper {
   display: flex;
-  padding-left: 70px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-left: 90px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   text-align: center;
   align-items: center;
   justify-content: space-between;
@@ -297,7 +387,7 @@ body {
 /* Card Styling */
 .portfolio__card {
   width: 250px;
-  height: 240px;
+  height: 220px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -351,7 +441,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
 .swiper-button-next {
@@ -431,7 +521,7 @@ body {
 /* Card Wrapper */
 .portfolio__card {
   background: #454545;
-  padding: 1rem;
+  padding: 15 px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
@@ -446,6 +536,67 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
+/* Project Detail */
+.project__detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Menempatkan detail di tengah */
+  height: 700px;
+  width: 700px;
+  max-width: 90%;
+  background: #1c1c1c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+  overflow-y: auto; /* Agar konten card dapat di-scroll */
+
+}
+
+.project__detail.hidden {
+  display: none;
+}
+
+.project__detail-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #00bcd4;
+}
+
+/* Background Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Warna abu-abu */
+  backdrop-filter: blur(5px); /* Efek blur */
+  z-index: 999;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
 
 
 /* Detail Card */
@@ -576,7 +727,9 @@ body {
   color: #ffffff;
   font-family: 'Ballet', serif;
   font-size: 5rem;
+  text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.7); /* Efek bayangan putih */
 }
+
 
 
 
@@ -589,41 +742,63 @@ body {
   padding-bottom: 200px;
   background-size: 10px;
   background-image: url('../img/tensi.png'); /* Ganti dengan path background Anda */
-  background-size: 90%; /* Ubah ukuran gambar menjadi lebih kecil */
-  background-repeat: no-repeat; /* Hindari pengulangan gambar */
+  background-size: 80%;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 .testimonial {
   display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  justify-content: center;
-  max-width: 1200px;
+  gap: 100px; /* Mengurangi jarak antar card */
+  justify-content: flex-start;
+  max-width: 100%;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
+  background: #3C3D37;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.455);
   border-radius: 15px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
   text-align: center;
   transition: transform 0.3s ease;
+  position: relative; /* Agar gambar dapat ditempatkan di depan card */
+  margin-top: 40px; /* Memberikan jarak antara gambar dan card */
 }
 
 .card:hover {
   transform: translateY(-10px);
 }
 
+.profile-img {
+  position: absolute;
+  top: -90px; /* Mengatur gambar agar berada di atas card */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Agar gambar tetap di depan card */
+}
+
 .profile-img img {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin-bottom: 15px;
   border: 2px solid #3C3D37;
 }
 
+.title-testi {
+  padding-top: 40px;
+  font-family: 'Baskervville SC', serif;
+  font-size: 20px;
+  font-weight: normal; /* Mengurangi ketebalan font */
+}
+
+.description-testi {
+  font-family: 'Baskervville SC', serif;
+  font-size: 15px;
+  font-weight: normal; /* Mengurangi ketebalan font */
+}
 
 
 .kontak {
@@ -642,21 +817,23 @@ body {
   padding: 40px;
 }
 
-.kontak .left h1 {
-  font-size: 48px;
-  font-style: italic;
-  margin: 0;
+.title-font-ballet-kontak {
+  color: #ffffff;
+  margin-right: 1px;
+  font-family: 'Ballet', serif;
+  font-size: 60px;
 }
 
-.kontak .left h1 span {
-  display: inline-block;
-  font-family: cursive;
-  font-size: 56px;
+.title-font-baskervville-sc-kontak {
+  color: #ffffff;
+  font-family: 'Baskervville SC', serif;
+  font-size: 60px;
 }
 
 .kontak .left p {
-  margin-top: 20px;
-  font-size: 16px;
+  font-family: 'Baskervville SC', serif;
+  font-size: 30px;
+  color: #ffffff;
   line-height: 1.5;
 }
 
@@ -665,18 +842,19 @@ body {
 }
 
 .kontak .left .contact-info a {
+  font-family: 'Baskervville SC', serif;
   display: block;
   color: #fff;
   text-decoration: none;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #fff;
-  width: fit-content;
+  width: 480px;
 }
 
 .kontak .right {
   width: 500px;
-  height: 400px;
+  height: 420px;
   background-color: #f8f8f8;
   border-radius: 16px;
   padding: 40px;
@@ -763,13 +941,13 @@ body {
   text-align: center;
   padding: 20px 0;
   font-size: 16px;
-  font-family: 'Georgia', serif;
+  font-family: 'Baskervville SC', serif;
   letter-spacing: 0.5px;
 }
 
 
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   body {
       display: none;
   }
@@ -783,4 +961,4 @@ body {
   element.style {
     background-color: red;
 }
-}
+} */
