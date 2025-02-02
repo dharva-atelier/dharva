@@ -206,28 +206,28 @@ const devtools = {
     threshold: 160, // Ambang batas untuk mendeteksi inspeksi
 };
 
-const checkDevTools = () => {
-    const widthThreshold = window.outerWidth - window.innerWidth > devtools.threshold;
-    const heightThreshold = window.outerHeight - window.innerHeight > devtools.threshold;
+// const checkDevTools = () => {
+//     const widthThreshold = window.outerWidth - window.innerWidth > devtools.threshold;
+//     const heightThreshold = window.outerHeight - window.innerHeight > devtools.threshold;
 
-    if (widthThreshold || heightThreshold) {
-        if (!isDevToolsOpen) {
-            isDevToolsOpen = true;
-            alert("Jangan mencoba membuka Developer Tools!");
-            window.location.href = "about:blank"; // Redirect ke halaman kosong
-        }
-    } else {
-        isDevToolsOpen = false;
-    }
-};
+//     if (widthThreshold || heightThreshold) {
+//         if (!isDevToolsOpen) {
+//             isDevToolsOpen = true;
+//             alert("Jangan mencoba membuka Developer Tools!");
+//             window.location.href = "about:blank"; // Redirect ke halaman kosong
+//         }
+//     } else {
+//         isDevToolsOpen = false;
+//     }
+// };
 
 setInterval(checkDevTools, 1000);
 
-// Mencegah klik kanan
-document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    alert("Klik kanan tidak diizinkan.");
-});
+// // Mencegah klik kanan
+// document.addEventListener("contextmenu", (e) => {
+//     e.preventDefault();
+//     alert("Klik kanan tidak diizinkan.");
+// });
 
 function checkDevice() {
     const width = window.innerWidth;

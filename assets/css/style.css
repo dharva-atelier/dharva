@@ -213,50 +213,96 @@ body {
 }
 
 /* Media Query untuk tampilan mobile */
-@media (max-width: 768px) {
+/* Media Query untuk layar laptop 14 inci (1366px x 768px) */
+@media (min-width: 1280px) and (max-width: 1440px) {
   .Home {
-    padding-top: 120px;
-    padding-bottom: 200px;
-    text-align: center;
-    justify-content: flex-start; /* Menjaga konten berada di atas */
+    flex-direction: row; /* Menjaga elemen tetap sejajar horizontal */
+    padding-top: 17px; /* Memberikan ruang di atas */
   }
 
   .img {
-    max-width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
-    padding-top: 0; /* Menghilangkan padding atas pada mobile */
-    text-align: center; /* Memusatkan gambar pada mobile */
+    margin-right: 50px; /* Memberikan sedikit ruang antara gambar dan teks */
   }
 
   .img img {
-    width: 100%; /* Membuat gambar responsif */
-    height: auto; /* Menjaga aspek rasio gambar */
-    margin-right: 0; /* Menghapus margin kanan gambar */
+    width: 400px; /* Sesuaikan lebar gambar */
+    height: auto; /* Pertahankan aspek rasio */
   }
 
   .content {
-    margin-right: 0; /* Menghilangkan margin kanan pada konten */
-    padding-top: 20px; /* Memberikan sedikit padding atas */
+    margin-right: 50px; /* Kurangi margin untuk tata letak lebih seimbang */
+    padding-top: 20px; /* Tambahkan sedikit jarak di atas */
   }
 
-  .title-font-imperial-script,
+  .title-font-imperial-script {
+    font-size: 50px; /* Sesuaikan ukuran font untuk laptop */
+  }
+
   .title-font-baskervville-sc {
-    font-size: 40px; /* Menyesuaikan ukuran font agar pas di mobile */
+    font-size: 35px; /* Ukuran font untuk teks lainnya */
   }
 
   .subtitle {
-    font-size: 1.2rem; /* Menyesuaikan ukuran subtitle di mobile */
+    font-size: 1.3rem; /* Ukuran subtitle sedikit lebih kecil */
   }
 
   .description {
-    font-size: 1rem; /* Menyesuaikan ukuran deskripsi di mobile */
-    line-height: 1.4; /* Menyesuaikan jarak antar baris */
+    font-size: 1.1rem; /* Ukuran deskripsi sedikit lebih kecil */
   }
 
   .button button {
-    padding: 0.5rem 1rem; /* Menyesuaikan padding tombol di mobile */
-    font-size: 0.9rem; /* Menyesuaikan ukuran font tombol */
+    padding: 0.7rem 1.2rem; /* Sesuaikan ukuran tombol */
+    font-size: 0.95rem; /* Ukuran font tombol */
   }
 }
+
+/* Media Query untuk layar tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Home {
+    flex-direction: column; /* Tata letak vertikal untuk tablet */
+    padding-top: 80px; /* Tambahkan ruang di atas */
+    padding-bottom: 80px;
+    text-align: center; /* Pusatkan semua elemen */
+  }
+
+  .img {
+    margin-right: 0; /* Hilangkan margin kanan */
+    text-align: center; /* Pusatkan gambar */
+    padding-top: 0px; /* Beri jarak atas */
+  }
+
+  .img img {
+    width: 300px; /* Perkecil ukuran gambar */
+    height: auto; /* Pertahankan aspek rasio */
+  }
+
+  .content {
+    margin-right: 0; /* Hilangkan margin kanan */
+    padding-top: 20px; /* Berikan sedikit ruang di atas */
+  }
+
+  .title-font-imperial-script {
+    font-size: 45px; /* Sesuaikan ukuran font */
+  }
+
+  .title-font-baskervville-sc {
+    font-size: 30px; /* Ukuran font untuk teks lainnya */
+  }
+
+  .subtitle {
+    font-size: 1.2rem; /* Ukuran subtitle untuk tablet */
+  }
+
+  .description {
+    font-size: 1rem; /* Ukuran deskripsi untuk tablet */
+  }
+
+  .button button {
+    padding: 0.6rem 1rem; /* Sesuaikan ukuran tombol */
+    font-size: 0.9rem; /* Ukuran font tombol */
+  }
+}
+
 
 
 
@@ -312,14 +358,84 @@ body {
   line-height: 1.7;
 }
 
-.about-image {
-  background-color: #3C3D37;
-}
 
 .about-image img {
   float: right;
-  max-width: 93.5%; /* Sesuaikan proporsi gambar */
+  max-width: 100%; /* Sesuaikan proporsi gambar */
 }
+
+/* Responsiveness for About Me Section */
+@media (max-width: 1024px) { /* Laptop 14 inch */
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .about-teks {
+    height: auto;
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    padding-top: 10%;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) { /* Tablet */
+  .about {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-teks {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .about-image {
+    margin-top: 20px;
+  }
+
+  .about-image img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
 
 /* portfolio */
 .portfolio {
@@ -521,7 +637,6 @@ body {
 /* Card Wrapper */
 .portfolio__card {
   background: #454545;
-  padding: 15 px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
@@ -536,6 +651,22 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
+/* Media Query untuk layar laptop 14 inci (1366px x 768px) */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .swiper-wrapper {
+    display: flex;
+    padding-left: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+}
+
+
+
 
 /* Project Detail */
 .project__detail {
@@ -701,8 +832,8 @@ body {
 }
 
 .card-skills img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Center Text */
